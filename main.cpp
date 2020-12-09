@@ -6,7 +6,7 @@ int main() {
     bool end = false;
     char YN;
 
-    while (end != true) {
+    while (!end) {
         cout << "Choose your option: " << endl;
         cout << "1 - Option number one" << endl;
         cout << "2 - Option number two" << endl;
@@ -92,9 +92,6 @@ int main() {
                     cout << "Wrong choice" << endl;
                     end = false;
                 }
-                break;
-            case 5:
-                end = false; // Case 5 and default are the same but case 5 is chosen by the user while default is error.
                 break;
             default:
                 end = false;
